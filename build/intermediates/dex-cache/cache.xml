@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Multimatics\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_a8a64adb44e46574777afec340885747c2232253\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="7302a993e61bba70d14ab185418a13137a3798a3">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2ada8d81b6b660adaa0e5fda5c79f9eebebbc5ce\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="02198d2c3f56e73363322854ae0fd63b1f06fdf4">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0f9d7310c3442b781e3fdcf17efcd1e4ae44025e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Multimatics\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_1b77d563bfb8dcdcaa6dc88b662247ad95e51eeb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_790122bd89555dcd4aca742d1ee471946e93f59f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_8629fe8370e3c9bd94b107d011298d75b1fadb7f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_525c0da196b25c3c44190352096dd30c768b1f48\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_f04aebd38f0d801d209549d069411304c84b4914\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_638cef6c23bf34d8af06271a7ea6e5a3c6ccf419\classes.dex" />
+    </item>
+
+</items>
