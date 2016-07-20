@@ -4,14 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity
+public class CategoryActivity extends AppCompatActivity
 implements AdapterView.OnItemClickListener {
     private ListView lvCategory;
     private String[] categories = new String[]{
@@ -28,7 +25,7 @@ implements AdapterView.OnItemClickListener {
         lvCategory = (ListView)findViewById(R.id.lv_category);
         lvCategory.setOnItemClickListener(this);
 
-        ArrayAdapter<String> categoryAdapter = new ArrayAdapter<String>(MainActivity.this,
+        ArrayAdapter<String> categoryAdapter = new ArrayAdapter<String>(CategoryActivity.this,
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1,categories);
         lvCategory.setAdapter(categoryAdapter);
@@ -36,7 +33,7 @@ implements AdapterView.OnItemClickListener {
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Intent intent = new Intent(MainActivity.this, ProductActivity.class);
+        Intent intent = new Intent(CategoryActivity.this, ProductActivity.class);
         intent.putExtra("category", categories[i]);
         startActivity(intent);
     }
