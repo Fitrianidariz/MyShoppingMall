@@ -13,9 +13,9 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_gravity="center"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="left"
         android:paddingTop="16dp"
         android:src="@drawable/avatar" />
 
@@ -23,8 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Regina"
-        android:gravity="center"
+        android:text="Edogawa"
+        android:gravity="left"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 

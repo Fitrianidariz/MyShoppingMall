@@ -1,5 +1,6 @@
 package com.example.multimatics.myshoppingmall;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.annotation.Nullable;
@@ -12,13 +13,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.multimatics.myshoppingmall.api.request.PostLoginRequest;
+import com.example.multimatics.myshoppingmall.api.response.User;
+import com.loopj.android.http.RequestParams;
+
 public class LoginActivity extends AppCompatActivity
-    implements View.OnClickListener {
+    implements View.OnClickListener, PostLoginRequest.OnPostLoginRequestListener
+{
 
     private TextView tvRegister;
     private Button btnLogin;
     private EditText edtUsername, edtPassword;
     private AppPreferences appPreferences;
+
+    private PostLoginRequest postLoginRequest;
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
@@ -37,6 +46,13 @@ public class LoginActivity extends AppCompatActivity
 
         btnLogin = (Button)findViewById(R.id.btn_login);
         btnLogin.setOnClickListener (this);
+
+        postLoginRequest = new PostLoginRequest();
+        postLoginRequest.setOnPostLoginRequestListener(this);
+
+        progressDialog = new ProgressDialog(LoginActivity.this);
+        progressDialog.setTitle("Login");
+        progressDialog.setMessage("Please Wait.....");
     }
 
     @Override
@@ -56,9 +72,14 @@ public class LoginActivity extends AppCompatActivity
                 if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
                     Toast.makeText(LoginActivity.this, "All fields are required", Toast.LENGTH_SHORT).show();
                 }else{
-                    appPreferences.setUsername(username);
-                    intent = new Intent(LoginActivity.this, HomeActivity.class);
-                    isLogin = true;
+                    RequestParams mRequestParams = new RequestParams();
+                    mRequestParams.put("username", username);
+                    mRequestParams.put("password", password);
+
+                    progressDialog.show();
+
+                    postLoginRequest.setPostRequestParams(mRequestParams);
+                    postLoginRequest.callApi();
                 }
                 break;
 
@@ -69,5 +90,21 @@ public class LoginActivity extends AppCompatActivity
                 finish();
             }
         }
+    }
+
+
+    @Override
+    public void onPostLoginSuccess(User user) {
+        progressDialog.cancel();
+        appPreferences.setUserId(user.getUserId());
+        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void onPostLoginFailure(String errorMessage) {
+        progressDialog.cancel();
+        Toast.makeText(LoginActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
     }
 }
